@@ -1,0 +1,28 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button defaultHref="/chats"></ion-back-button>
+		</ion-buttons>
+		<ion-title>{{ data.username }}</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+	<div class="message-list">
+
+		<div *ngFor="let msg of messages" class="message {{ msg.type }}">
+			<ion-chip class="{{ msg.type }}">
+				{{ msg.msg }}
+			</ion-chip>
+		</div>
+
+		<div class="message no-msg" *ngIf="data.msg_len == 0">
+			<ion-chip class="no-msg" outline color="primary">
+				Bisher keine Nachrichten
+			</ion-chip>
+		</div>
+
+	</div>
+
+</ion-content>

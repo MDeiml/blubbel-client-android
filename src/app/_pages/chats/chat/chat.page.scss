@@ -1,0 +1,30 @@
+.message-list {
+
+	.message {
+
+		&:first-child {
+			margin-top:	10px;
+		}
+
+		.send, .received {
+			margin: 5px 5px 5px 10px;
+		}
+
+		&.send {
+			margin-right: 10px;
+			text-align: right;
+		}
+
+		.received {
+			background-color: #3880ff;
+			color: #fff;
+		}
+
+		&.no-msg {
+			text-align: center;
+
+		}
+
+	}
+
+}

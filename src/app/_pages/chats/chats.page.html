@@ -1,0 +1,20 @@
+<ion-content>
+
+	<ion-list>
+
+		<ion-item *ngFor="let chat of _chats" [routerLink]="['chat', chat.uniqueKey, chat.username, chat.msgs, chat.msg_len]">
+			<ion-icon name="contact" slot="start" size="large"></ion-icon>
+			<ion-label>
+				<div class="chat-list-username">
+					{{ chat.username }}
+				</div>
+				<div>
+					{{ chat.msg_len }} Nachrichten
+				</div>
+			</ion-label>
+			<ion-icon slot="end" name="arrow-dropright"></ion-icon>
+		</ion-item>
+
+	</ion-list>
+
+</ion-content>
