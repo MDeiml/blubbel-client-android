@@ -28,3 +28,29 @@
 	}
 
 }
+
+.input-group-container {
+	position:	fixed;
+	bottom:		0;
+	width:		100%;
+	height:		56px;
+	border-top:	1px solid var(--ion-color-primary-shade);
+
+	.input-group {
+		display:	-ms-flex;
+		display:	flex;
+
+		.item {
+			width:	calc(100% - 56px);
+		}
+
+		.send-btn {
+			height:				48px;
+			width:				48px;
+			margin:				0;
+			border-radius:		0;
+			margin:				4px 0 0 4px;
+		}
+	}
+
+}
