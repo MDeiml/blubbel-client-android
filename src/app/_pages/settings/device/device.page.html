@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+  	<ion-buttons slot="start">
+  		<ion-back-button defaultHref="/pages/settings"></ion-back-button>
+  	</ion-buttons>
+    <ion-title>My Device</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card id="credentialQRCode">
+    <ion-card-content>
+      <ngx-qrcode
+        [qrc-element-type]="QRType"
+        [qrc-value]="QRStr"
+        qrc-class="qr-code"
+        qrc-version="6">
+      </ngx-qrcode>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

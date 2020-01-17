@@ -1,4 +1,5 @@
 import { NgModule, Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 import { Chats } from '../../_interfaces/chats';
 import { ChatsService } from '../../_services/chats.service';
 
@@ -12,7 +13,10 @@ export class ChatsPage implements OnInit {
   _chats: Chats[] = [];
   chatObserver;
 
-  constructor(protected _chatsService: ChatsService) {}
+  constructor(
+    protected _chatsService: ChatsService
+    ,public _modalController: ModalController
+  ) {}
 
   ngOnInit() {
   	this.chatObserver = this._chatsService.getChats();

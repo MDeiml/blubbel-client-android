@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+  	<ion-buttons slot="start">
+		<ion-back-button defaultHref="/"></ion-back-button>
+	</ion-buttons>
+    <ion-title>Chat hinzufügen</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-button expand="block" (click)="scanCode()">Scan</ion-button>
+
+	<ion-card>
+
+		<ion-card-content>
+
+			Result from scan:<br><br>
+			{{ scanned }}
+
+		</ion-card-content>
+
+	</ion-card>
+</ion-content>

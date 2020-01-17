@@ -31,34 +31,34 @@ export class ChatsService {
   	var dummy = [
 		{
 			type:	'received',
-			msg:	'Hallo'
+			msg:	'Hello'
 		},
 		{
 			type:	'received',
-			msg:	'wie gehts?'
+			msg:	'How you doin?'
 		},
 		{
 			type:	'send',
-			msg:	'Gut und selbst?'
+			msg:	'Hi there'
 		}
 	]
 	var dummy_str = JSON.stringify(dummy);
   	if (storage === null) {
 	  	var array	= [
 	  		{
-	  			username:	'AnonymousUser',
+	  			username:	'Anonymous User',
 	  			uniqueKey:	'l12sDNQ2j1dfdj',
 	  			msgs:		dummy_str,
 	  			msg_len:	3
 	  		},
 	  		{
-	  			username:	'MustermannUser',
+	  			username:	'Uglified User',
 	  			uniqueKey:	'pü254Kfdkj4SJN',
 	  			msgs:		'[]',
 	  			msg_len:	0
 	  		},
 	  		{
-	  			username:	'Nochein User',
+	  			username:	'Hashed User',
 	  			uniqueKey:	'äöqri531FLSKw3',
 	  			msgs:		'[]',
 	  			msg_len:	0

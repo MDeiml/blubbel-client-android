@@ -9,6 +9,14 @@ const routes: Routes = [
   {
     path: 'chat',
     loadChildren: () => import('./_pages/chats/chat/chat.module').then( m => m.ChatPageModule)
+  },
+  {
+    path: 'new-chat',
+    loadChildren: () => import('./_pages/chats/new-chat/new-chat.module').then( m => m.NewChatPageModule)
+  },
+  {
+    path: 'device',
+    loadChildren: () => import('./_pages/settings/device/device.module').then( m => m.DevicePageModule)
   }
 ];
 @NgModule({

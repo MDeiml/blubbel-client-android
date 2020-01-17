@@ -19,6 +19,11 @@ const routes: Routes = [
             path: 'chat/:key/:username/:msgs/:msg_len',
             loadChildren: () =>
               import('../chats/chat/chat.module').then(m => m.ChatPageModule)
+          },
+          {
+            path: 'new-chat',
+            loadChildren: () =>
+              import('../chats/new-chat/new-chat.module').then(m => m.NewChatPageModule)
           }
         ]
       },
@@ -34,6 +39,12 @@ const routes: Routes = [
             path: 'layout',
             loadChildren: () =>
               import('../settings/layout/layout.module').then(m => m.LayoutPageModule)
+          },
+          {
+            path: 'device',
+            loadChildren: () =>
+              import('../settings/device/device.module').then(m => m.DevicePageModule)
+
           },
           {
             path: 'app-info',
