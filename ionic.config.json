@@ -1,7 +1,8 @@
 {
   "name": "blubbel-client",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }

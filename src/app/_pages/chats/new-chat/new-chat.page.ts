@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
+import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner/ngx';
 
 
 @Component({
@@ -10,7 +10,8 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 export class NewChatPage implements OnInit {
 
   constructor(
-    private _barcodeScanner: BarcodeScanner
+    private _barcodeScanner: BarcodeScanner,
+    private _barcodeScannerOptions: BarcodeScannerOptions
   ) { }
 
   ngOnInit() {
