@@ -6,6 +6,10 @@
     <param name="android-package" value="org.chromium.ChromeSocketsTcp"/>
   </feature>
 
+  <feature name="ChromeSocketsUdp">
+    <param name="android-package" value="org.chromium.ChromeSocketsUdp"/>
+  </feature>
+
   <feature name="Device">
     <param name="android-package" value="org.apache.cordova.device.Device"/>
   </feature>
